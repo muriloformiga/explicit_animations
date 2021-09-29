@@ -42,8 +42,11 @@ class _MyHomePageState extends State<AnimatedLogoPage>
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Animated Logo'),
+      ),
+      body: Center(
         child: AnimatedLogo(animation),
       ),
     );
